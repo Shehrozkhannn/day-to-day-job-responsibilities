@@ -1,0 +1,21 @@
+
+.main-content-container{
+    .top-sec{
+        h1{
+            font-size: 26px;
+            color: #012b5d;
+        }
+    }
+    .bottom-sec{
+        button{
+            background: #e3e3e3;
+        }
+    }
+}
+::ng-deep .mat-dialog-container{
+    width: 500px;
+    height: 180px
+}
+::ng-deep .mat-dialog-actions{
+    justify-content: end;
+}

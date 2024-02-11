@@ -1,0 +1,28 @@
+.main-container {
+  display: flex;
+  height: 813px;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  flex-direction: column;
+  span{
+    margin-bottom: 25px;
+  }
+  b {
+    color: #012b5d;
+  }
+  button {
+    height: 39px;
+    width: 169px;
+    border-radius: 10px;
+    background-color: #012b5d;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+
+    &:hover{
+        background-color: #000;
+        transition: ease-out 0.5s;
+    }
+  }
+}

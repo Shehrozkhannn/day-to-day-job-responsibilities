@@ -1,0 +1,56 @@
+<div class="main-container">
+  <div class="title">
+    <h1>LEAD ASSESSMENT</h1>
+  </div>
+  <div class="ode-form">
+    <h2>QDE FORM</h2>
+    <form [formGroup]="odeForm">
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>City</mat-label>
+          <input matInput formControlName="city" placeholder="Enter City" />
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Montly Income</mat-label>
+          <input matInput formControlName="income" placeholder="Enter City" />
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Down Payment</mat-label>
+          <input formControlName="down_payment" matInput placeholder="Enter Down payment" />
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Loan Amount</mat-label>
+          <input formControlName="loan_amount" matInput placeholder="Enter requested loan amount" />
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>History of bankruptcy</mat-label>
+          <mat-select formControlName="bankruptcy">
+            <mat-option [value]=true>Yes</mat-option>
+            <mat-option [value]=false>No</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </p>
+
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>All Documents </mat-label>
+          <mat-select formControlName="documents">
+            <mat-option [value]=true>Yes</mat-option>
+            <mat-option [value]=false>No</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </p>
+    </form>
+    <div class="submit">
+      <button (click)="makeDecision(odeForm)">SUBMIT</button>
+    </div>
+  </div>
+</div>

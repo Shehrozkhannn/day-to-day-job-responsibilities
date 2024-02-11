@@ -1,0 +1,30 @@
+.main-container{
+    .title{
+        display: inline-block;
+        margin: 25px 26px;
+        h1{
+            border-bottom: 3px solid #012b5d;
+        }
+    }
+    .ode-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .submit{
+            padding-bottom: 30px;
+            button{
+                height: 42px;
+                width: 155px;
+                border-radius: 11px;
+                background-color: #346db1;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+::ng-deep .mat-form-field{
+    width: 367px;
+}
