@@ -50,7 +50,9 @@
       </p>
     </form>
     <div class="submit">
-      <button (click)="makeDecision(odeForm)">SUBMIT</button>
+      <button (click)="makeDecision(odeForm)" [disabled]="!odeForm.valid"
+      [ngStyle]="{'background-color': !odeForm.valid ? '#b5b5b5' : '#346db1', 'pointer-events': !odeForm.valid ? 'none' : 'auto'}"
+      >SUBMIT</button>
     </div>
   </div>
 </div>
